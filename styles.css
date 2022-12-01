@@ -1,8 +1,15 @@
 /*comment*/
 
+*
+{
+    font-family: 'Rubik Distressed', cursive;
+    font-size:22px;
+}
+
+
 button
 {
-    width: 70px;
-    height:70px;
-    border-radius:35px;
+    width: 65px;
+    height:50px;
+    border-radius:30px;
 }
