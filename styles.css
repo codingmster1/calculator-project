@@ -120,5 +120,20 @@ color:#333;
 
 .calculator button#clear
 {
-    
+    color:rgb(231, 47, 72);
+}
+
+.calculator button#delete
+{
+    color:rgb(231, 47, 72);
+}
+
+.calculator button.btn-number
+{
+    background-color:rgb(204, 227, 228);
+}
+
+.calculator button.btn-operator
+{
+ background-color:rgb(236, 235, 200);
 }
