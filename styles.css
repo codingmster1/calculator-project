@@ -22,6 +22,19 @@ button
     width: 80px;
     height:60px;
     border-radius:32px;
+    cursor:pointer;
+    transition: all 200ms ease;
+    margin:5px;
+}
+
+button:hover
+{
+    transform:scale(1.15);
+}
+
+button#equal
+{
+    height:130px;
 }
 
 .container
@@ -30,4 +43,82 @@ button
     width:100vw;
     display:grid;
     place-items:center;
+}
+
+.calculator
+{
+   
+    position:relative;
+    height:auto;
+    width:auto;
+    padding:20px;
+    border-radius:5px;
+    box-shadow:0 0 30px rgb(60, 189, 21);
+}
+
+.theme-toggler
+{
+    position:absolute;
+    top:30px;
+    right:30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.theme-toggler.active
+{
+color:#333;
+}
+
+.theme-toggler.active::before {
+    background-color:white;
+}
+
+.theme-toggler::before{
+    content: '';
+    height:30px;
+    width:30px;
+    position:absolute;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    border-radius: 50%;
+    background-color:#333;
+    z-index:-1;
+
+}
+
+#display
+{
+    margin: 0 10px;
+    height:150px;
+    width:auto;
+    max-width:270px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:flex-end;
+    font-size:30px;
+    margin-bottom:20px;
+    overflow-x:scroll;
+}
+
+#display::-webkit-scrollbar
+{
+    display:block;
+    height:3px;
+}
+
+.calculator
+{
+    background-color:white;
+}
+
+.calculator #display
+{
+    color: black;
+}
+
+.calculator button#clear
+{
+    
 }
