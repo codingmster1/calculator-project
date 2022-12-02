@@ -1,6 +1,7 @@
 //comment
 //console.log("hi")
 let operator = '0';
+let displayValue='';
 
 document.addEventListener("DOMContentLoaded", function(){
     let clear = document.querySelector('#CR');
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 function handleNumber(num){
-console.log(num);
+displayValue += num;
 }
 
 
