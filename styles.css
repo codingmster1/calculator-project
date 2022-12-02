@@ -56,66 +56,30 @@ button#equal
     box-shadow:0 0 30px rgb(60, 189, 21);
 }
 
-.theme-toggler
-{
-    position:absolute;
-    top:30px;
-    right:30px;
-    color: #fff;
-    cursor: pointer;
-    z-index: -1;
-}
 
-.theme-toggler.active
-{
-color:#333;
-}
-
-.theme-toggler.active::before {
-    background-color:white;
-}
-
-.theme-toggler::before{
-    content: '';
-    height:30px;
-    width:30px;
-    position:absolute;
-    top: 50%;
-    transform:translate(-50%, -50%);
-    border-radius: 50%;
-    background-color:#333;
-    z-index:-1;
-
-}
 
 #display
 {
     margin: 0 10px;
-    height:150px;
-    width:auto;
-    max-width:270px;
+    height:170px;
+    width:390px;
     display:flex;
     align-items:flex-end;
     justify-content:flex-end;
     font-size:30px;
     margin-bottom:20px;
-    overflow-x:scroll;
-}
-
-#display::-webkit-scrollbar
-{
-    display:block;
-    height:3px;
+    color:rgb(253, 247, 247);
+    border: 2px solid rgb(42, 199, 120);
 }
 
 .calculator
 {
-    background-color:white;
+    background-color:rgb(174, 233, 126);
 }
 
 .calculator #display
 {
-    color: black;
+    background-color: white;
 }
 
 .calculator button#clear
@@ -125,15 +89,15 @@ color:#333;
 
 .calculator button#delete
 {
-    color:rgb(231, 47, 72);
+    color:rgb(214, 104, 31);
 }
 
 .calculator button.btn-number
 {
-    background-color:rgb(204, 227, 228);
+    background-color:rgb(219, 229, 151);
 }
 
 .calculator button.btn-operator
 {
- background-color:rgb(236, 235, 200);
+ background-color:rgb(198, 214, 210);
 }
