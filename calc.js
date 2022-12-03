@@ -45,12 +45,7 @@ document.addEventListener("DOMContentLoaded", function(){
         currentScreen.textContent = previousValue;
     })
 
-    //deleteBtn.addEventListener('click', function(){
-
-   //     currentScreen = previousScreen.textContent
-   //     .toString()
-     //  .slice(0, -1)
-   // })
+   
 
 })
 
@@ -88,6 +83,12 @@ function answer(){
 
   function round(num){
    return Math.round(num * 1000) / 1000;
+}
+
+function deleteNum(){
+    current.textContent = previous.textContent
+    .toString()
+    .slice(0, -1)
 }
 
 
