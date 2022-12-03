@@ -64,7 +64,7 @@ function answer(){
         previousValue += currentValue;
     } else if(operator === "-"){
         previousValue -= currentValue;
-    } else if(operator === "*"){
+    } else if(operator === "x"){
         previousValue *= currentValue;
     } else {
         previousValue /= currentValue;
@@ -75,6 +75,6 @@ function answer(){
     currentValue = previousValue.toString();
 }
 
-function round(num){
-    return Math.round(num * 1000) / 1000;
+  function round(num){
+   return Math.round(num * 1000) / 1000;
 }
