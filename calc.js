@@ -68,6 +68,8 @@ function answer(){
 
     if(operator === "+"){
         previousValue += currentValue;
+    } else if (operator === "^") {
+        previousValue **= currentValue;
     } else if(operator === "-"){
         previousValue -= currentValue;
     } else if(operator === "x"){
