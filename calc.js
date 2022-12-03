@@ -4,10 +4,14 @@ let operator = '';
 let previousValue='';
 let currentValue='';
 
+
 document.addEventListener("DOMContentLoaded", function(){
     let clear = document.querySelector('.clear');
     let equal = document.querySelector(".equal");
 
+    
+
+    let deleteBtn = document.querySelector('.delete');
 
     let numbers = document.querySelectorAll(".number");
     let operators = document.querySelectorAll(".operator");
@@ -40,6 +44,13 @@ document.addEventListener("DOMContentLoaded", function(){
         previousScreen.textContent='';
         currentScreen.textContent = previousValue;
     })
+
+    //deleteBtn.addEventListener('click', function(){
+
+   //     currentScreen = previousScreen.textContent
+   //     .toString()
+     //  .slice(0, -1)
+   // })
 
 })
 
@@ -78,3 +89,5 @@ function answer(){
   function round(num){
    return Math.round(num * 1000) / 1000;
 }
+
+
