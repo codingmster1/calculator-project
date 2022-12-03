@@ -91,22 +91,22 @@ button#equal
     background-color: rgb(233, 239, 241);
 }
 
-.calculator button#clear
+.clear
 {
     color:rgb(231, 47, 72);
 }
 
-.calculator button#delete
+.delete
 {
-    color:rgb(214, 104, 31);
+    color:rgb(231, 47, 72);
 }
 
-.calculator button.btn-number
+.calculator button.number
 {
     background-color:rgb(219, 229, 151);
 }
 
-.calculator button.btn-operator
+.calculator button.operator
 {
  background-color:rgb(198, 214, 210);
 }
