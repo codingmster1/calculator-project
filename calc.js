@@ -5,7 +5,7 @@ let previousValue='';
 let currentValue='';
 
 document.addEventListener("DOMContentLoaded", function(){
-    let clear = document.querySelector('#CR');
+    let clear = document.querySelector('.clear');
     let equal = document.querySelector(".equal");
 
 
@@ -20,14 +20,39 @@ document.addEventListener("DOMContentLoaded", function(){
           currentScreen.textContent = currentValue;
     }))
 
+    operators.forEach((op) => op.addEventListener("click", function(e){
 
+        handleOperator(e.target.textContent)
+        previousScreen.textContent = previousValue + "" + operator;
+        currentScreen.textContent = currentValue;
+    }))
+
+    clear.addEventListener("click", function(){
+        previousValue = '';
+        currentValue = '';
+        operator = '';
+        previousScreen.textContent = currentValue;
+        currentScreen.textContent = currentValue;
+    })
+
+    equal.addEventListener("click", function(){
+        answer();
+    })
 
 })
 
 function handleNumber(num){
-    if(currentValue.length <= 5){
-currentValue += num;
+    if(currentValue.length <= 10){
+    currentValue += num;
     }
 }
 
+function handleOperator(op){
+    operator= op;
+    previousValue = currentValue;
+    currentValue="";
+}
 
+function answer(){
+
+}
