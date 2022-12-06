@@ -5,6 +5,7 @@ let previousValue='';
 let currentValue='';
 
 
+
 document.addEventListener("DOMContentLoaded", function(){
     let clear = document.querySelector('.clear');
     let equal = document.querySelector(".equal");
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
     
 
     let deleteBtn = document.querySelector('.delete');
+    //let deletebtn = del[0]
 
     let numbers = document.querySelectorAll(".number");
     let operators = document.querySelectorAll(".operator");
@@ -44,6 +46,15 @@ document.addEventListener("DOMContentLoaded", function(){
         previousScreen.textContent='';
         currentScreen.textContent = previousValue;
     })
+
+   // deleteBtn.addEventListener("click", function(){
+
+       // del();
+
+       // currentScreen.textContent = previousScreen;
+       // previousScreen.textContent = '';
+        
+    //})
 
    
 
@@ -87,10 +98,21 @@ function answer(){
    return Math.round(num * 1000) / 1000;
 }
 
-function deleteNum(){
-    current.textContent = previous.textContent
-    .toString()
-    .slice(0, -1)
-}
+ 
+   
+   
+   
+   
+   
+    
+    
+    //if (num.textContent.length == 1) {
+
+  // num.textContent = '0';
+  //} else (num.textContent = num.textContent = num.textContent.slice(0, -1))
+ // current.textContent = previous.textContent
+   // .toString()
+   // .slice(0, -1)
+
 
 
