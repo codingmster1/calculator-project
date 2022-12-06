@@ -47,6 +47,15 @@ document.addEventListener("DOMContentLoaded", function(){
         currentScreen.textContent = previousValue;
     })
 
+    deleteBtn.addEventListener("click", function(){
+        del();
+        currentScreen = currentScreen.toString().slice(0, -1)
+       calculator.del()
+        //calculator.currentScreen();
+      })
+
+    
+
    // deleteBtn.addEventListener("click", function(){
 
        // del();
@@ -98,9 +107,11 @@ function answer(){
    return Math.round(num * 1000) / 1000;
 }
 
- 
+function del(){
+    currentScreen = currentScreen.toString().slice(0, -1)
+}
    
-   
+  
    
    
    
