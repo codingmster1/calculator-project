@@ -48,9 +48,16 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 
     deleteBtn.addEventListener("click", function(){
-        del();
-        currentScreen = currentScreen.toString().slice(0, -1)
-       calculator.del()
+
+        //previousValue = '';
+       // currentValue = '';
+       // operator = '';
+        //del();
+        //previousScreen.textContent = currentScreen.textContent;
+        currentScreen.textContent = currentScreen.textContent.slice(0, -1)
+        //previousValue = Number(previousValue);
+        //previousScreen.textContent = currentScreen.textContent.slice(0, -1)
+       //calculator.del()
         //calculator.currentScreen();
       })
 
