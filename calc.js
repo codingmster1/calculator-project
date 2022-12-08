@@ -50,11 +50,13 @@ document.addEventListener("DOMContentLoaded", function(){
     deleteBtn.addEventListener("click", function(){
 
         //previousValue = '';
-       // currentValue = '';
-       // operator = '';
+        //currentValue = '';
+       //operator = '';
         //del();
-        //previousScreen.textContent = currentScreen.textContent;
-        currentScreen.textContent = currentScreen.textContent.slice(0, -1)
+        //currentScreen.textContent='';
+        currentScreen.textContent= currentScreen.textContent.slice(0, -1)
+        //currentScreen.textContent = currentScreen.textContent;
+        //currentScreen.textContent = currentScreen.textContent.slice(0, -1)
         //previousValue = Number(previousValue);
         //previousScreen.textContent = currentScreen.textContent.slice(0, -1)
        //calculator.del()
@@ -114,9 +116,9 @@ function answer(){
    return Math.round(num * 1000) / 1000;
 }
 
-function del(){
-    currentScreen = currentScreen.toString().slice(0, -1)
-}
+//function del(){
+    //currentScreen.textContent = currentScreen.textContent.slice(0, -1)
+//}
    
   
    
