@@ -54,7 +54,12 @@ document.addEventListener("DOMContentLoaded", function(){
        //operator = '';
         //del();
         //currentScreen.textContent='';
-        currentScreen.textContent= currentScreen.textContent.slice(0, -1)
+        //currentValue = '';
+        currentScreen.textContent= currentValue.slice(0, -1)
+        currentScreen.textContent = previousValue;
+        previousScreen.textContent = currentValue;
+        //currentScreen.textContent = '';
+       // currentScreen.textContent = previousValue;
         //currentScreen.textContent = currentScreen.textContent;
         //currentScreen.textContent = currentScreen.textContent.slice(0, -1)
         //previousValue = Number(previousValue);
