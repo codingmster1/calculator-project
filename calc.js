@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
     
 
     let deletes = document.querySelector('.delete');
+    
     //let deletebtn = del[0]
 
     let numbers = document.querySelectorAll(".number");
@@ -50,16 +51,16 @@ document.addEventListener("DOMContentLoaded", function(){
 
     deletes.addEventListener("click", function(){
 
-        //backspace();
-        //previousValue = '';
-        currentValue = '';
+        backspace();
+       // previousValue = '';
+       // currentValue = '';
        //operator = '';
         //del();
         //currentScreen.textContent='';
         //currentValue = '';
-        currentScreen.textContent= currentScreen.textContent.toString().slice(0, -1)
+        //currentScreen.textContent= currentScreen.textContent.toString().slice(0, -1)
         //previousScreen.textContent = previousScreen;
-       // previousScreen.textContent = currentValue;
+       //previousScreen.textContent = currentValue;
         //currentScreen.textContent = '';
        // currentScreen.textContent = previousValue;
         //currentScreen.textContent = currentScreen.textContent;
