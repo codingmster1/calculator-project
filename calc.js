@@ -3,7 +3,7 @@
 let operator = '';
 let previousValue='';
 let currentValue='';
-
+//let deleteBtn = document.getElementById('delete')
 
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -11,8 +11,9 @@ document.addEventListener("DOMContentLoaded", function(){
     let equal = document.querySelector(".equal");
 
     
+    
 
-    let deleteBtn = document.querySelector('.delete');
+    let deletes = document.querySelector('.delete');
     //let deletebtn = del[0]
 
     let numbers = document.querySelectorAll(".number");
@@ -47,17 +48,18 @@ document.addEventListener("DOMContentLoaded", function(){
         currentScreen.textContent = previousValue;
     })
 
-    deleteBtn.addEventListener("click", function(){
+    deletes.addEventListener("click", function(){
 
+        //backspace();
         //previousValue = '';
-        //currentValue = '';
+        currentValue = '';
        //operator = '';
         //del();
         //currentScreen.textContent='';
         //currentValue = '';
-        currentScreen.textContent= currentValue.slice(0, -1)
-        currentScreen.textContent = previousValue;
-        previousScreen.textContent = currentValue;
+        currentScreen.textContent= currentScreen.textContent.toString().slice(0, -1)
+        //previousScreen.textContent = previousScreen;
+       // previousScreen.textContent = currentValue;
         //currentScreen.textContent = '';
        // currentScreen.textContent = previousValue;
         //currentScreen.textContent = currentScreen.textContent;
@@ -121,9 +123,12 @@ function answer(){
    return Math.round(num * 1000) / 1000;
 }
 
-//function del(){
+function backspace(){
     //currentScreen.textContent = currentScreen.textContent.slice(0, -1)
-//}
+    currentScreen.textContent= currentScreen.textContent.toString().slice(0, -1)
+
+}
+
    
   
    
