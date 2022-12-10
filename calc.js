@@ -3,17 +3,18 @@
 let operator = '';
 let previousValue='';
 let currentValue='';
+
 //let deleteBtn = document.getElementById('delete')
 
 
 document.addEventListener("DOMContentLoaded", function(){
     let clear = document.querySelector('.clear');
     let equal = document.querySelector(".equal");
-
+    let backspace = document.querySelector('.delete');
     
     
 
-    let deletes = document.querySelector('.delete');
+    //let deletes = document.querySelector('.delete');
     
     //let deletebtn = del[0]
 
@@ -49,9 +50,23 @@ document.addEventListener("DOMContentLoaded", function(){
         currentScreen.textContent = previousValue;
     })
 
+
+   // backspace.addEventListener('click', (e) => {
+
+       // handleOperator(e.target.textContent)
+        //bs();
+        //previousValue ='';
+       // currentScreen.textContent='';
+       // currentValue='';
+        //currentValue=previousValue.textContent;
+
+       // currentScreen.textContent= currentScreen.textContent.toString(e).slice(0, -1)
+
+   // });
+
     deletes.addEventListener("click", function(){
 
-        backspace();
+        back();
        // previousValue = '';
        // currentValue = '';
        //operator = '';
@@ -98,6 +113,12 @@ function handleOperator(op){
     currentValue="";
 }
 
+function back(backspace){
+
+    currentScreen('backspace', -1);
+
+}
+
 function answer(){
 
     previousValue = Number(previousValue);
@@ -124,11 +145,12 @@ function answer(){
    return Math.round(num * 1000) / 1000;
 }
 
-function backspace(){
+//function bs(){
     //currentScreen.textContent = currentScreen.textContent.slice(0, -1)
-    currentScreen.textContent= currentScreen.textContent.toString().slice(0, -1)
+    //currentScreen.textContent= currentScreen.textContent.toString().slice(0, -1)
 
-}
+    //num.textContent = '-1';
+//}
 
    
   
@@ -139,7 +161,7 @@ function backspace(){
     
     //if (num.textContent.length == 1) {
 
-  // num.textContent = '0';
+  // 
   //} else (num.textContent = num.textContent = num.textContent.slice(0, -1))
  // current.textContent = previous.textContent
    // .toString()
