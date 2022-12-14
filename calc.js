@@ -51,18 +51,7 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 
 
-   // backspace.addEventListener('click', (e) => {
-
-       // handleOperator(e.target.textContent)
-        //bs();
-        //previousValue ='';
-       // currentScreen.textContent='';
-       // currentValue='';
-        //currentValue=previousValue.textContent;
-
-       // currentScreen.textContent= currentScreen.textContent.toString(e).slice(0, -1)
-
-   // });
+   
 
     backspace.addEventListener("click", function(){
 
@@ -100,37 +89,12 @@ function upDateDisplay(){
 }
         
         
-        //back();
-       // previousValue = '';
-       // currentValue = '';
-       //operator = '';
-        //del();
-        //currentScreen.textContent='';
-        //currentValue = '';
-        //currentScreen.textContent= currentScreen.textContent.toString().slice(0, -1)
-        //previousScreen.textContent = previousScreen;
-       //previousScreen.textContent = currentValue;
-        //currentScreen.textContent = '';
-       // currentScreen.textContent = previousValue;
-        //currentScreen.textContent = currentScreen.textContent;
-        //currentScreen.textContent = currentScreen.textContent.slice(0, -1)
-        //previousValue = Number(previousValue);
-        //previousScreen.textContent = currentScreen.textContent.slice(0, -1)
-       //calculator.del()
-        //calculator.currentScreen();
+        
       })
 
     
 
-   // deleteBtn.addEventListener("click", function(){
-
-       // del();
-
-       // currentScreen.textContent = previousScreen;
-       // previousScreen.textContent = '';
-        
-    //})
-
+   
    
 
 })
@@ -147,11 +111,11 @@ function handleOperator(op){
     currentValue="";
 }
 
-function back(backspace){
+//function back(backspace){
 
-    currentScreen('backspace', -1);
+   // currentScreen('backspace', -1);
 
-}
+//}
 
 function answer(){
 
@@ -181,12 +145,6 @@ function answer(){
 
 
 
-//function bs(){
-    //currentScreen.textContent = currentScreen.textContent.slice(0, -1)
-    //currentScreen.textContent= currentScreen.textContent.toString().slice(0, -1)
-
-    //num.textContent = '-1';
-//}
 
    
   
@@ -195,13 +153,7 @@ function answer(){
    
     
     
-    //if (num.textContent.length == 1) {
-
-  // 
-  //} else (num.textContent = num.textContent = num.textContent.slice(0, -1))
- // current.textContent = previous.textContent
-   // .toString()
-   // .slice(0, -1)
+   
 
 
 
