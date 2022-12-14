@@ -64,9 +64,43 @@ document.addEventListener("DOMContentLoaded", function(){
 
    // });
 
-    deletes.addEventListener("click", function(){
+    backspace.addEventListener("click", function(){
 
-        back();
+        let temp;
+        if (currentValue === 'You cant divide by 0!'){
+        currentValue=0;
+        temp = currentValue;
+    }
+
+        
+        //temp = currentValue.toString().slice(0,-1)
+
+        else {
+            temp = currentValue.toString().slice(0,-1)
+        }
+        
+        if (temp ===''|| temp === 0){
+            temp = 0;
+            currentValue = temp;
+
+            upDateDisplay();
+
+
+        }
+        else {
+            currentValue = parseFloat(temp)
+            upDateDisplay();
+
+        }
+        
+function upDateDisplay(){
+    currentScreen.textContent = currentValue;
+    previousScreen.textContent = previousValue;
+
+}
+        
+        
+        //back();
        // previousValue = '';
        // currentValue = '';
        //operator = '';
@@ -144,6 +178,8 @@ function answer(){
   function round(num){
    return Math.round(num * 1000) / 1000;
 }
+
+
 
 //function bs(){
     //currentScreen.textContent = currentScreen.textContent.slice(0, -1)
