@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     backspace.addEventListener("click", function(){
 
-        let temp;
+        let temp
         if (currentValue === 0){
         currentValue=0;
         temp = currentValue;
@@ -77,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function(){
             temp = '';
             currentValue = temp;
 
+            
             upDateDisplay();
 
 
