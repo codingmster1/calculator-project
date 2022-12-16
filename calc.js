@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
         let temp
         if (currentValue === 0){
-        currentValue=0;
+        currentValue =0;
         temp = currentValue;
-        
+       
         
     }
 
@@ -67,17 +67,18 @@ document.addEventListener("DOMContentLoaded", function(){
         //temp = currentValue.toString().slice(0,-1)
 
         else {
-           temp =  currentValue.toString().slice(0,-1)
+           temp = currentValue.toString().slice(0,-1)
 
+          
         }
         
         if (temp ===''|| temp === ''){
             temp = '';
             currentValue = temp;
             upDateDisplay();
+        }
 
-
-       }
+       
         else {
             currentValue = parseFloat(temp)
             upDateDisplay();
@@ -90,16 +91,11 @@ function upDateDisplay(){
 
 }
         
-        
+     
         
       })
 
-    
-
-   
-   
-
-})
+    })
 
 function handleNumber(num){
     if(currentValue.length <= 10){
@@ -147,7 +143,7 @@ function answer(){
 
 
 
-
+    
    
   
    
