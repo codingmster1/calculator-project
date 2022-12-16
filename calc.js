@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function(){
             temp = '';
             currentValue = temp;
 
-            upDateDisplay();
+            //upDateDisplay();
 
 
        }
