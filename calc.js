@@ -56,26 +56,28 @@ document.addEventListener("DOMContentLoaded", function(){
     backspace.addEventListener("click", function(){
 
         let temp;
-        if (currentValue === 'You cant divide by 0!'){
+        if (currentValue === 0){
         currentValue=0;
         temp = currentValue;
+        
     }
 
         
         //temp = currentValue.toString().slice(0,-1)
 
         else {
-            temp = currentValue.toString().slice(0,-1)
+           temp =  currentValue.toString().slice(0,-1)
+           
         }
         
-        if (temp ===''|| temp === 0){
-            temp = 0;
+        if (temp ===''|| temp === ''){
+            temp = '';
             currentValue = temp;
 
             upDateDisplay();
 
 
-        }
+       }
         else {
             currentValue = parseFloat(temp)
             upDateDisplay();
