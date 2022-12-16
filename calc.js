@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function(){
         if (currentValue === 0){
         currentValue=0;
         temp = currentValue;
-        //upDateDisplay();
+        
         
     }
 
@@ -68,16 +68,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
         else {
            temp =  currentValue.toString().slice(0,-1)
-           
-           //upDateDisplay();
-           
+
         }
         
         if (temp ===''|| temp === ''){
             temp = '';
             currentValue = temp;
-
-            
             upDateDisplay();
 
 
